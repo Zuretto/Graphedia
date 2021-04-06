@@ -1,0 +1,252 @@
+@import url(./reset.css);
+@import url(./ramka.css);
+
+html {
+    /* Google Fonts */
+    font-family: 'Roboto', sans-serif; 
+    font-size: 62.5%;
+    color: #48504e;
+    background: #0061d1 url(./assets/globe1.jpg) fixed no-repeat;
+    background-size: contain;
+}
+
+/* framework kolorow */
+.blue { color: #0061d1; }
+.grey { color: #48504e; }
+.lightgrey { color: #d4d4d3; }
+
+h1 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    margin: 4rem;
+    border-radius: 2rem 0 2rem 0;
+    text-align: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+h2 { font-size: 2.3rem; }
+h3 { font-size: 3.1rem; }
+
+h3, h2 {
+    color: #fff;
+    background-color: #48504e;
+    padding: 1.5rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 15%;
+}
+
+h4 {
+    font-size: 2.5rem;
+    padding: 2rem 1rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.55;
+}
+
+ul {
+    font-size: 2.3rem;
+    line-height: 1.75;
+}
+
+footer p {
+    font-size: 1.4rem;
+    color: #d4d4d3;
+}
+
+header {
+    display: none;
+    background: #48504e;
+    color: white;
+    height: 20rem;
+}
+
+nav {
+    margin-top: 4rem;
+    margin-right: 5%;
+    float: right;
+}
+
+nav li {
+    text-align: right;
+    background: url(./assets/arrow.svg) right no-repeat;
+    padding-right: 4rem;
+    line-height: 1.5rem;
+    margin: 3rem;
+}
+
+figure {
+    display: none;
+    float: left;
+    width: 15rem;
+    padding: 5rem;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    width: 45rem;
+    padding: 5% 7%;
+    margin: 1rem auto;
+    margin-bottom: 6rem;
+    border-radius: 2rem 0 2rem 0;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: block;
+    background: #0061d1;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1.5rem 3.5rem;
+    margin: 1.5rem auto;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 65%;
+    background: none;
+    border: 3px #48504e solid;
+    font-size: 2rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    background-color: rgba(255, 255, 255, 0.8);;
+}
+
+section {
+    width: 70%;
+    min-width: 600px;
+    max-width: 1000px;
+    position: absolute;
+    right: 10%;
+}
+
+hgroup {
+    position: relative;
+    margin-top: 15%;
+}
+
+h3 {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    background: #fff;
+    z-index: 6;
+}
+
+
+.summary {
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: -3%;
+    margin-bottom: 8%;
+}
+
+.menu {
+    background: #fff url(./assets/menu.svg) center no-repeat;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+
+.hover-me:hover header {
+    display: block;
+}
+
+/* pseudoklasy */
+a:link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #d3d3d3;
+}
+
+a:hover {
+    color: #48504e;
+}
+
+nav a:hover {
+    color: black;
+}
+
+@media all and (max-width: 1280px) {
+
+    html {
+        background: #0061d1;
+    }
+
+    section {
+        width: 75%;
+    }
+
+    hgroup {
+        margin-top: 0;
+    }
+
+    .bg {
+        background: #0061d1 url(./assets/globe-mobile.jpg) fixed no-repeat;
+        height: 30rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    hgroup {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    h1 {
+        margin: 2rem;
+        font-size: 4rem;
+    }
+
+    section {
+        width: 90%;
+        min-width: 300px;
+        right: 5%;
+    }
+
+    form {
+        padding: 1rem 0;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .bg {
+        background: #0061d1;
+        height: 10rem;
+    }
+}

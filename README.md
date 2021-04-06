@@ -1,1 +1,1 @@
-# PPedia
+# Graphpedia
